@@ -1,8 +1,5 @@
-nombre = "Roberto"
-edad = 40
+usuarios = ["Ana", "Luis", "María", "Roberto"]
 
-if edad >= 18:
-    mensaje = "adulto"
-else:
-    print("Es menor de edad")
-
+for usuario in usuarios:
+    if len(usuario) > 4:
+        print(usuario)
