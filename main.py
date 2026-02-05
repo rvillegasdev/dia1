@@ -10,6 +10,6 @@ def es_usuario_valido(nombre):
 
 usuarios = ["Ana", "Luis", "María", "Roberto", "Sol", "Alejandro"]
 
-for usuario in usuarios:
-    if es_usuario_valido(usuario):
-        print(usuario)
+for nombre in usuarios:
+    if es_usuario_valido(nombre):
+        print(nombre)
