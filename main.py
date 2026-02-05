@@ -12,4 +12,4 @@ usuarios = ["Ana", "Luis", "María", "Roberto", "Sol", "Alejandro"]
 
 for nombre in usuarios:
     if es_usuario_valido(nombre):
-        print(nombre)
+        print(nombre))
