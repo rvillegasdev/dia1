@@ -1,16 +1,20 @@
 while True:
-    try:
-        limite = int(input("¿Hasta qué número quieres contar? (sólo números del 0 en adelante): "))
+        entrada = input("¿Hasta qué número quieres contar? (0 o positvo, o 'salir'):  ")
 
-        if limite < 0:
-            print("Ingresa unicamente cero o números enteros positivos")
-        else:
+        if entrada.lower() == "salir":
+            print("Programa finalizado por el usuario.")
             break
+        
+        try:
+            limite = int(entrada)
             
-    except ValueError:
-        print("Eso no es un número válido. Intenta de nuevo.")
+            if limite < 0:
+                print("Solo se permiten números 0 o positivos.")
+            else:
+                for numero in range(1, limite + 1):
+                    print("Número: ", numero)
+                print("Conteo terminado.")
+                break
+        except ValueError:
+            print("Eso no es un número válido. Intenta de nuevo.")
 
-for numero in range(1, limite + 1):
-        print("Número:", numero)
-
-print("Conteo terminado")
